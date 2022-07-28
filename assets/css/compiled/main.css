@@ -1096,6 +1096,16 @@ body button {
   display: none;
 }
 
+/* Taxonomy List */
+
+.taxonomy-list {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
 /* Hamburger menu */
 
 body:has(#menu-controller:checked) {
