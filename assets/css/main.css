@@ -21,6 +21,12 @@ body button {
   @apply hidden;
 }
 
+/* Taxonomy List */
+
+.taxonomy-list {
+  @apply flex flex-wrap -mx-2 overflow-hidden;
+}
+
 /* Hamburger menu */
 body:has(#menu-controller:checked) {
   @apply overflow-y-hidden;
