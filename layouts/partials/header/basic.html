@@ -77,6 +77,9 @@
                 <a
                   href="{{ .URL }}"
                   title="{{ .Title }}"
+                  {{ if .Params.rel }}
+                    rel="{{ .Params.rel }}"
+                  {{ end }}
                   {{ with .Params.target }}target="{{ . }}"{{ end }}
                   >{{ with .Params.icon }}
                     <span
