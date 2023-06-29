@@ -34,6 +34,9 @@
                 class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
                 href="{{ .URL }}"
                 title="{{ .Title }}"
+                {{ if .Params.rel }}
+                  rel="{{ .Params.rel }}"
+                {{ end }}
                 >{{ .Name | markdownify | emojify }}</a
               >
             </li>
